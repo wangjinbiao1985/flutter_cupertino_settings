@@ -31,15 +31,15 @@ const EdgeInsets CS_ICON_PADDING = EdgeInsets.only(
   left: 4.0,
 );
 const CSWidgetStyle CS_DEFAULT_STYLE = CSWidgetStyle();
-const double CS_CHECK_SIZE = 28.0;
+const double CS_CHECK_SIZE = 25.0;
 
 /// Event for [CSSelection]
 typedef void SelectionCallback(int selected);
 
-TextStyle basicTextStyle(BuildContext context) => //Platform.isIOS
-    //? 
-    CupertinoTheme.of(context).textTheme.textStyle;
-    //: Theme.of(context).textTheme.subhead;
+TextStyle basicTextStyle(BuildContext context) => Platform.isIOS
+    ? 
+    CupertinoTheme.of(context).textTheme.textStyle
+    : Theme.of(context).textTheme.subhead;
 
 class CupertinoSettings extends StatelessWidget {
   final List<Widget> items;
