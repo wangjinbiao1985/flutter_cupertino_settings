@@ -59,11 +59,11 @@ class CSWidget extends StatelessWidget {
       constraints: const BoxConstraints(minHeight: 42),
       // height: height,
       padding: EdgeInsets.only(
-        left: addPaddingToBorder ? padding.left : 0,
+        left: addPaddingToBorder ? padding.left+10 : 0,
       ),
       child: Container(
         padding: padding.copyWith(
-          left: addPaddingToBorder ? 2 : padding.left + 10,
+          left: addPaddingToBorder ? 2 : padding.left + 2,
         ),
         decoration: BoxDecoration(
           border: Border(
